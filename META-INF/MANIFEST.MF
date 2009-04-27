@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Iritgo Eclipse Tools Grails Plug-in
+Bundle-SymbolicName: de.iritgo.eclipse.tools.grails;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: de.iritgo.eclipse.tools.grails.IritgoGrailsPlugin
+Bundle-Vendor: Iritgo Technologies
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ de.iritgo.eclipse.tools,
+ org.eclipse.jdt.core
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: lib/commons-io-1.4.jar,
+ .
