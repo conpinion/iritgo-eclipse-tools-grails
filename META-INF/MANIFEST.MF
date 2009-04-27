@@ -11,5 +11,5 @@ Require-Bundle: org.eclipse.ui,
  de.iritgo.eclipse.tools,
  org.eclipse.jdt.core
 Bundle-ActivationPolicy: lazy
-Bundle-ClassPath: lib/commons-io-1.4.jar,
- .
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
