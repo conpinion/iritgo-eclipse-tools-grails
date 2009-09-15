@@ -7,7 +7,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.jdt.core.ClasspathVariableInitializer;
 import org.eclipse.jdt.core.JavaCore;
@@ -15,12 +14,12 @@ import org.eclipse.jdt.core.JavaModelException;
 
 public class GrailsLocalClasspathVariable extends ClasspathVariableInitializer
 {
-	public static final String VARIABLE_NAME = "GRAILS_USER_HOME";  
-	
+	public static final String VARIABLE_NAME = "GRAILS_USER_HOME";
+
 	public GrailsLocalClasspathVariable ()
-	{	
+	{
 	}
-	
+
 	@Override
 	public void initialize (String variable)
 	{
@@ -28,9 +27,9 @@ public class GrailsLocalClasspathVariable extends ClasspathVariableInitializer
 		{
 			return;
 		}
-		
+
 		IPath value = JavaCore.getClasspathVariable (VARIABLE_NAME);
-		
+
 		if (value == null)
 		{
 			try
@@ -56,12 +55,12 @@ public class GrailsLocalClasspathVariable extends ClasspathVariableInitializer
 				x.printStackTrace ();
 			}
 		}
-		
+
 		if (value == null)
 		{
 			value = new Path ("");
 		}
-		
+
 		try
 		{
 			JavaCore.setClasspathVariable (variable, value, null);
