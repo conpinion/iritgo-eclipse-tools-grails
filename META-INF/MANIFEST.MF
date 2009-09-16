@@ -5,7 +5,7 @@ Bundle-SymbolicName: de.iritgo.eclipse.tools.grails;singleton:=true
 Bundle-Version: 1.0.2
 Bundle-Activator: de.iritgo.eclipse.tools.grails.IritgoGrailsPlugin
 Bundle-Vendor: Iritgo Technologies
-Require-Bundle: org.eclipse.ui,
+Require-Bundle: org.eclipse.ui;bundle-version="3.5.0",
  org.eclipse.core.runtime,
  org.eclipse.core.resources,
  de.iritgo.eclipse.tools,
